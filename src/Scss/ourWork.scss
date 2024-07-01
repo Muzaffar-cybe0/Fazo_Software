@@ -1,0 +1,366 @@
+.ourWork {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-direction: column;
+  position: relative;
+  .ourWork_child1 {
+    width: 65%;
+    height: 650px;
+    display: flex;
+    gap: 40px;
+    transition: all 1.6s ease-in-out;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    border-radius: 16px;
+    box-shadow: 0 0 25px 10px #bac0d2;
+    .child1-1 {
+      z-index: 1;
+      img {
+        width: 320px;
+        object-fit: cover;
+        transition: all 0.6s ease-in-out;
+        border-radius: 15px;
+      }
+    }
+
+    .child1-2 {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      gap: 80px;
+      z-index: 3;
+      div:nth-child(1) {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+        p:nth-child(1) {
+          font-size: 50px;
+          color: white;
+          z-index: 3;
+        }
+        p:nth-child(2) {
+          width: 85%;
+          font-size: 23px;
+          color: white;
+          z-index: 3;
+        }
+        p:nth-child(3) {
+          font-size: 18px;
+          color: white;
+          z-index: 3;
+        }
+      }
+
+      .cards_img_C {
+        display: flex;
+        gap: 20px;
+        .card_img {
+          opacity: 1;
+          width: 10%;
+          transition: all 0.6s ease-in-out;
+          border-radius: 5px;
+          border: 2px solid white;
+        }
+        .card_img:nth-child(1):hover {
+          border: 2px solid #bac0d2;
+          box-shadow: 0 0 10px 2px #bac0d2;
+        }
+        .card_img:nth-child(2):hover {
+          border: 2px solid #1580af;
+          box-shadow: 0 0 10px 2px #1580af;
+        }
+        .card_img:nth-child(3):hover {
+          border: 2px solid #58fe92;
+          box-shadow: 0 0 10px 2px #58fe92;
+        }
+
+        img:hover {
+          transform: scale(1.08);
+        }
+      }
+      .cards_img_C:hover > .card_img:not(:hover) {
+        filter: blur(5px);
+        transform: scale(0.9);
+      }
+    }
+    .logout {
+      opacity: 0;
+      width: 10%;
+      padding: 10px 0px;
+      border-radius: 5px;
+      z-index: 3;
+      color: white;
+      position: absolute;
+      right: 50px;
+      top: 20px;
+      background-color: transparent;
+      font-size: 16px;
+      border: none;
+      background-color: transparent;
+      transition: all 0.6s ease-in-out;
+      color: white;
+      box-shadow: 0 0 10px 2px #bac0d2;
+    }
+    .logout:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+  }
+  .Bg_image {
+    width: 100%;
+    position: absolute;
+    filter: blur(8px);
+
+    transition: all 0.6s ease-in-out;
+  }
+  .openWork {
+    position: absolute;
+    height: 100%;
+    opacity: 0;
+    bottom: -700px;
+    z-index: 4;
+    transition: all 0.6s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(34, 33, 33, 0.33);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid gray;
+    gap: 25px;
+    p {
+      text-align: center;
+      width: 90%;
+      color: white;
+      font-size: 35px;
+    }
+    .openWork_button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-family: inherit;
+      font-size: 13px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      color: #7e97b8;
+      background-color: #e0e8ef;
+      border-style: solid;
+      border-width: 2px 2px 2px 2px;
+      border-color: rgba(255, 255, 255, 0.333);
+      border-radius: 40px 40px 40px 40px;
+      padding: 16px 24px 16px 28px;
+      transform: translate(0px, 0px) rotate(0deg);
+      transition: 0.2s;
+      box-shadow: -4px -2px 16px 0px #ffffff,
+        4px 2px 16px 0px rgb(95 157 231 / 48%);
+    }
+
+    .openWork_button:hover {
+      color: #516d91;
+      background-color: #e5edf5;
+      box-shadow: -2px -1px 8px 0px #ffffff,
+        2px 1px 8px 0px rgb(95 157 231 / 48%);
+    }
+
+    .openWork_button:active {
+      box-shadow: none;
+    }
+  }
+  .ourWork_child1:hover .openWork {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .ourWork {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column;
+    position: relative;
+    .ourWork_child1 {
+      width: 65%;
+      height: 650px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      transition: all 1.6s ease-in-out;
+      overflow: hidden;
+      position: relative;
+      z-index: 2;
+      border-radius: 16px;
+      box-shadow: 0 0 25px 10px #bac0d2;
+      .child1-1 {
+        z-index: 1;
+        img {
+          width: 320px;
+          object-fit: cover;
+          transition: all 0.6s ease-in-out;
+          border-radius: 15px;
+        }
+      }
+
+      .child1-2 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 80px;
+        z-index: 3;
+        div:nth-child(1) {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          gap: 30px;
+          p:nth-child(1) {
+            font-size: 50px;
+            color: white;
+            z-index: 3;
+          }
+          p:nth-child(2) {
+            width: 85%;
+            font-size: 23px;
+            color: white;
+            z-index: 3;
+          }
+          p:nth-child(3) {
+            font-size: 18px;
+            color: white;
+            z-index: 3;
+          }
+        }
+
+        .cards_img_C {
+          display: flex;
+          gap: 20px;
+          .card_img {
+            opacity: 1;
+            width: 10%;
+            transition: all 0.6s ease-in-out;
+            border-radius: 5px;
+            border: 2px solid white;
+          }
+          .card_img:nth-child(1):hover {
+            border: 2px solid #bac0d2;
+            box-shadow: 0 0 10px 2px #bac0d2;
+          }
+          .card_img:nth-child(2):hover {
+            border: 2px solid #1580af;
+            box-shadow: 0 0 10px 2px #1580af;
+          }
+          .card_img:nth-child(3):hover {
+            border: 2px solid #58fe92;
+            box-shadow: 0 0 10px 2px #58fe92;
+          }
+
+          img:hover {
+            transform: scale(1.08);
+          }
+        }
+        .cards_img_C:hover > .card_img:not(:hover) {
+          filter: blur(5px);
+          transform: scale(0.9);
+        }
+      }
+      .logout {
+        opacity: 0;
+        width: 10%;
+        padding: 10px 0px;
+        border-radius: 5px;
+        z-index: 3;
+        color: white;
+        position: absolute;
+        right: 50px;
+        top: 20px;
+        background-color: transparent;
+        font-size: 16px;
+        border: none;
+        background-color: transparent;
+        transition: all 0.6s ease-in-out;
+        color: white;
+        box-shadow: 0 0 10px 2px #bac0d2;
+      }
+      .logout:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+      }
+    }
+    .Bg_image {
+      width: 100%;
+      position: absolute;
+      filter: blur(8px);
+      transition: all 0.6s ease-in-out;
+    }
+    .openWork {
+      position: absolute;
+      height: 100%;
+      opacity: 0;
+      bottom: -700px;
+      z-index: 4;
+      transition: all 0.6s ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: rgba(34, 33, 33, 0.33);
+      border-radius: 16px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(20px);
+      border: 1px solid gray;
+      gap: 25px;
+      p {
+        text-align: center;
+        width: 90%;
+        color: white;
+        font-size: 35px;
+      }
+      .openWork_button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        font-family: inherit;
+        font-size: 13px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+        color: #7e97b8;
+        background-color: #e0e8ef;
+        border-style: solid;
+        border-width: 2px 2px 2px 2px;
+        border-color: rgba(255, 255, 255, 0.333);
+        border-radius: 40px 40px 40px 40px;
+        padding: 16px 24px 16px 28px;
+        transform: translate(0px, 0px) rotate(0deg);
+        transition: 0.2s;
+        box-shadow: -4px -2px 16px 0px #ffffff,
+          4px 2px 16px 0px rgb(95 157 231 / 48%);
+      }
+
+      .openWork_button:hover {
+        color: #516d91;
+        background-color: #e5edf5;
+        box-shadow: -2px -1px 8px 0px #ffffff,
+          2px 1px 8px 0px rgb(95 157 231 / 48%);
+      }
+
+      .openWork_button:active {
+        box-shadow: none;
+      }
+    }
+    .ourWork_child1:hover .openWork {
+      opacity: 1;
+      bottom: 0;
+    }
+  }
+}

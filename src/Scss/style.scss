@@ -1,0 +1,118 @@
+.swiper {
+  width: 100%;
+  height: 100%;
+  padding-top: 120px;
+  position: relative;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  padding: 20px 0px;
+  background-color: transparent;
+  box-shadow:inset 0 0 15px 10px aqua;
+  p:nth-child(1){
+    font-size: 28px;
+    color: #f72585;
+  }
+  p:nth-child(2){
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+  }
+}
+.carusel_pink{
+  box-shadow:inset 0 0 15px 10px #f72585;
+  p:nth-child(1){
+    font-size: 28px;
+    color: gold;
+  }
+  p:nth-child(2){
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+  }
+}
+.swiper-button-prev{
+  position: absolute;
+  top: 8%;
+  left:80%;
+  padding: 30px;
+  border-radius: 50%;
+  color: rgb(255, 255, 255);
+  border: 5px solid #25e2f7;
+  box-shadow: inset 0 0 10px 2px aqua;
+}
+.swiper-button-next{
+  position: absolute;
+  top: 8%;
+  right: 7%;
+  padding: 30px;
+  border-radius: 50%;
+  color: rgb(255, 255, 255);
+  border: 5px solid #f72585;
+  box-shadow: inset 0 0 10px 2px #f72585;
+}
+.swiper-slide img {
+  display: block;
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media only screen and (max-width: 800px) {
+  .swiper {
+    width: 100%;
+    height: 100%;
+    padding-top: 120px;
+    position: relative;
+  }
+  .swiper-button-prev{
+    position: absolute;
+    top: 8%;
+    left:60%;
+    padding: 30px;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    border: 5px solid #25e2f7;
+    box-shadow: inset 0 0 10px 2px aqua;
+  }
+  .swiper-button-next{
+    position: absolute;
+    top: 8%;
+    right: 8%;
+    padding: 30px;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    border: 5px solid #f72585;
+    box-shadow: inset 0 0 10px 2px #f72585;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .swiper-button-prev{
+    position: absolute;
+    top: 8%;
+    left:50%;
+    padding: 30px;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    border: 5px solid #25e2f7;
+    box-shadow: inset 0 0 10px 2px aqua;
+  }
+  .swiper-button-next{
+    position: absolute;
+    top: 8%;
+    right: 8%;
+    padding: 30px;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    border: 5px solid #f72585;
+    box-shadow: inset 0 0 10px 2px #f72585;
+  }
+}
